@@ -1,0 +1,39 @@
+html,body {
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	overflow:auto;
+}
+.table{
+	font:normal 12px "Microsoft YaHei";
+	font-family: "Microsoft YaHei","Î¢ÈíÑÅºÚ","sans-serif" ;	
+}
+.table th{
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#298AD3,endColorStr=#fafafa); /*IE*/   
+    background:-ms-linear-gradient(top,#298AD3,#fafafa); /*IE*/  
+    background:-moz-linear-gradient(top,#298AD3,#fafafa);/*»ðºü*/   
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#298AD3), to(#fafafa));
+	text-align: center;
+}
+.indexOn{
+	color:red;
+}
+.content{
+	width:99%;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.foot{
+    margin-top:-18px;
+	bottom:0px;
+	width:100%;
+	height:auto;
+	text-align:center;
+	background-image: url(../image/page-bottom.png);
+	z-index:2;
+	overflow:hidden;
+	vertical-align: middle;
+	height: 40px;
+	line-height: 32px;
+}
