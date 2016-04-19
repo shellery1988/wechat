@@ -18,7 +18,7 @@ public class MemCachedUtil {
 	protected static MemCachedClient mcc = new MemCachedClient();
 
 	static {
-		String[] servers = { "121.42.11.139:11211" };
+		String[] servers = { "120.27.113.216:11211" };
 		//String[] servers = { "192.168.67.42:11200" };//正式环境
 		
 		Integer[] weights = { 3 };

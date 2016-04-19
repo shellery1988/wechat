@@ -29,7 +29,6 @@ import com.weixin.bean.request.WeChatReqBean;
 import com.weixin.bean.response.WeChatRespBean;
 
 @Controller
-@RequestMapping("/user")
 public class WeixinController extends BaseAction{
 
 	/**
@@ -104,6 +103,8 @@ public class WeixinController extends BaseAction{
 				} else if("unsubscribe".equals(event)){	//取消关注
 					String fromUserName = reqBean.getFromUserName();
 					unsubscribe(fromUserName);
+				} else if("location".equals(event)){
+					
 				}
 			}
 			
@@ -203,6 +204,11 @@ public class WeixinController extends BaseAction{
 			MemCachedUtil.addOrUpdate("userlist_map", map, 12);
 			MemCachedUtil.addOrUpdate("userlist_count", count, 12);
 		}
+	}
+	
+	public static void main(String[] args) {
+		MemCachedUtil.deleteCache("userlist_map");
+		MemCachedUtil.deleteCache("userlist_count");
 	}
 	
 }
